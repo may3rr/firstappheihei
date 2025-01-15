@@ -98,18 +98,18 @@ class PlayerSelector {
     avatar.className = 'avatar';
     avatar.src = this.selectedPlayer ? 
       `./assets/${this.selectedPlayer.avatar}` : 
-      './assets/default-avatar.jpg';
+      './assets/default-avatar.svg';
     
     // 处理图片加载错误
     avatar.onerror = () => {
-      avatar.src = './assets/default-avatar.jpg';
+      avatar.src = './assets/default-avatar.svg';
     };
 
     const name = document.createElement('div');
     name.className = 'player-name';
     name.textContent = this.selectedPlayer ? 
       this.selectedPlayer.name : 
-      '选择选手';
+      '点击选择选手';
 
     this.element.innerHTML = '';
     this.element.appendChild(avatar);
@@ -156,7 +156,7 @@ class PlayerSelector {
       avatar.style.width = '60px';
       avatar.style.height = '60px';
       avatar.onerror = () => {
-        avatar.src = './assets/default-avatar.jpg';
+        avatar.src = './assets/default-avatar.svg';
       };
 
       const name = document.createElement('div');

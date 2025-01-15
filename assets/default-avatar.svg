@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆 -->
+  <circle cx="40" cy="40" r="40" fill="#E0E0E0"/>
+  <!-- 头部 -->
+  <circle cx="40" cy="30" r="15" fill="#9E9E9E"/>
+  <!-- 身体 -->
+  <path d="M40 50C51.0457 50 60 58.9543 60 70V80H20V70C20 58.9543 28.9543 50 40 50Z" fill="#9E9E9E"/>
+</svg> 
