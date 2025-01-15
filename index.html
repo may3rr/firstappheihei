@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>台球记录</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 滚动通告栏 -->
+  <div class="banner-container">
+    <div class="banner-wrapper"></div>
+  </div>
+
+  <div class="container">
+    <!-- 页面容器 -->
+    <div class="pages">
+      <!-- 对战页面 -->
+      <div class="page match-page active">
+        <header class="date-header"></header>
+        <main class="player-selection">
+          <div class="player-box player1"></div>
+          <div class="vs-label">VS</div>
+          <div class="player-box player2"></div>
+          <div class="match-buttons">
+            <button class="win-btn">玩家一胜</button>
+            <button class="lose-btn">玩家二胜</button>
+          </div>
+        </main>
+      </div>
+
+      <!-- 今日战况页面 -->
+      <div class="page today-page">
+        <header class="date-header"></header>
+        <section class="today-stats">
+          <h2>今日战况</h2>
+          <div class="stats-grid"></div>
+        </section>
+      </div>
+
+      <!-- 排行榜页面 -->
+      <div class="page rank-page">
+        <header class="page-header">
+          <h1>排行榜</h1>
+        </header>
+        <section class="leaderboard">
+          <div class="leaderboard-list"></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <nav class="bottom-nav">
+      <div class="nav-item active" data-page="match">
+        <span class="nav-icon">🎱</span>
+        <span class="nav-text">对战</span>
+      </div>
+      <div class="nav-item" data-page="today">
+        <span class="nav-icon">📊</span>
+        <span class="nav-text">今日</span>
+      </div>
+      <div class="nav-item" data-page="rank">
+        <span class="nav-icon">🏆</span>
+        <span class="nav-text">排名</span>
+      </div>
+    </nav>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
